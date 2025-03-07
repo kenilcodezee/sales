@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "/home/kenil-codezee/CodezeeWork/demo/src/logs/error/.88e8d947a90a51747197cd7141658b01d5257064-audit.json",
+    "files": [
+        {
+            "date": 1741072657199,
+            "name": "/home/kenil-codezee/CodezeeWork/demo/src/logs/error/error-2025-03-04.log",
+            "hash": "8e4f0407d1f502ffb83175a56625f8e505b82ea5a16cfa6c9c47aa7743f24395"
+        }
+    ],
+    "hashType": "sha256"
+}

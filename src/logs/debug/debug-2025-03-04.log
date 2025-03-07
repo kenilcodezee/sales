@@ -1,0 +1,5 @@
+[2025-03-04T07:17:38.087Z] ERROR: Unable to connect to the database: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
+[2025-03-04T07:18:53.993Z] INFO: 21ms Executed (default): SELECT 1+1 AS result
+[2025-03-04T07:18:54.014Z] INFO: 26ms Executed (default): SELECT 1+1 AS result
+[2025-03-04T07:18:54.018Z] INFO: Database connected successfully!
+[2025-03-04T07:18:54.029Z] INFO: Server is running on http://localhost:5000

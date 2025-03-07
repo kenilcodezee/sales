@@ -1,0 +1,1 @@
+[2025-03-04T07:17:38.087Z] ERROR: Unable to connect to the database: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
