@@ -14,6 +14,20 @@ const decodeToken = async (header: string | undefined) => {
     return payload;
 };
 
+/**
+* Handles authentication middleware, decoding token and adding user context to request.
+* @example
+* sync(req, res, next)
+* Proceeds to next middleware or route handler after token validation.
+* @param {Request} req - Express request object containing HTTP request info.
+* @param {Response} res - Express response object for HTTP response handling.
+* @param {NextFunction} next - Function to pass control to the next middleware.
+* @returns {void} Adds decoded token context to the request or calls next with error.
+* @description
+*   - Skips token decoding for 'OPTIONS' method and '/api/auth/signin' path.
+*   - Uses 'Authorization' header to fetch token for decoding.
+*   - Handles errors by passing them to next middleware/error handler.
+*/
 export const authMiddleware = async (
     req: Request,
     res: Response,
