@@ -8,6 +8,18 @@ const options = {
     },
 };
 
+/**
+ * Validates user data against a defined schema with specified constraints.
+ * @example
+ * validateUserData({ email: 'test@example.com', name: 'John', password: 'Password123!' })
+ * Returns valid object if input data satisfies schema constraints, otherwise returns error details.
+ * @param {Object} userData - The user data object that includes id, email, name, username, and password.
+ * @returns {Object} The result of the validation process containing value if valid, otherwise error details.
+ * @description
+ *   - Utilizes Joi library for schema definition and validation.
+ *   - Ensures 'email' and 'name' fields are required; 'email' must be in a valid format.
+ *   - Validates 'password' for complexity including length, uppercase, lowercase, number, and special character.
+ */
 export const validateSignUp = (userData: any) => {
     const schema = Joi.object({
         id: Joi.string()

@@ -9,6 +9,18 @@ export const generateJWT = async (payload: any, secretKey: string) => {
     }
 };
 
+/**
+* Verifies and decodes a JWT token asynchronously
+* @example
+* sync("Bearer eyJhbGciOiJIUzI1NiIsInR...", "your-secret-key")
+* Promise<JwtPayload>
+* @param {string} token - JWT token prefixed with 'Bearer '
+* @param {string} secretKey - Secret key used for verifying the token
+* @returns {Promise<jwt.JwtPayload>} Decoded JWT payload
+* @description
+*   - Uses the secret key to verify the provided token after removing 'Bearer ' prefix.
+*   - Throws an error if the token payload is invalid or if verification fails.
+*/
 export const verifyJWT = async (
     token: string,
     secretKey: string,
